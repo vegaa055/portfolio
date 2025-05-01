@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Iceland&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik+80s+Fade&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -60,6 +59,7 @@ header {
 }
 
 header h1 {
+  font-family: "Iceland";
   font-size: 3.5rem;
   color: #58a6ff;
 }
@@ -68,10 +68,6 @@ header p {
   font-family: "Montserrat";
   font-size: 1.2rem;
   color: #8b949e;
-}
-
-.title-name {
-  font-family: "Iceland";
 }
 
 nav {
@@ -103,10 +99,36 @@ section {
 }
 
 h2 {
+  font-family: "Iceland";
+  font-size: 2.5rem;
   color: #58a6ff;
   border-bottom: 1px solid #30363d;
   padding-bottom: 0.5rem;
   margin-bottom: 1rem;
+}
+
+h3 {
+  font-family: "Iceland";
+}
+
+h4 {
+  font-family: "Iceland";
+}
+
+.exp-title {
+  color: #318ef8;
+}
+
+.experience-item .experience-desc {
+  font-family: "Montserrat";
+  font-weight: 200;
+  border-bottom: 1px solid #30363d;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.experience-duration {
+  font-style: italic;
 }
 
 .project {
@@ -139,6 +161,20 @@ footer {
   padding: 0;
 }
 
-#about {
-  column-count: 2;
+.profile_pic:hover {
+  transform: scale(
+    1.25
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.project {
+  font-family: "Montserrat";
+}
+
+.intro p {
+  font-family: "Montserrat";
+}
+
+.about {
+  font-family: "Montserrat";
 }
