@@ -20,6 +20,7 @@
     <title>Tony Vega</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
   </head>
+
   <body>
     <header>
       <h1 class="title-name">Tony Vega</h1>
@@ -46,7 +47,7 @@
           class="collapse navbar-collapse justify-content-center"
           id="navbarSupportedContent"
         >
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-center">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#about"
                 >About</a
@@ -90,17 +91,29 @@
     </nav>
 
     <div class="container">
-      <section id="about">
-        <img class="profile_pic" src="images/tony.jpg" />
-        <h2 class="about">About Me</h2>
-        <p>
-          I'm a developer passionate about merging code with creativity. With
-          experience in full-stack software development and game mechanics, I
-          build elegant, efficient, and engaging digital experiences. I
-          specialize in C#, Unity, Python, and satisfying user experiences.
-        </p>
-      </section>
+      <div class="row">
+        <!---MY LOGO--->
+        <div class="col-sm">
+          <img
+            class="profile_pic"
+            src="images/tony.jpg"
+            alt="Retro Blogger logo - created by Anthony Vega"
+            class="float-sm-left img-fluid"
+          />
+        </div>
 
+        <!---MY INTRO--->
+        <div class="col-sm text-light text-justify mt-2">
+          <h2>About Me</h2>
+          <p>
+            I'm a developer passionate about merging code with creativity. With
+            experience in full-stack software development and game mechanics, I
+            build elegant, efficient, and engaging digital experiences. I
+            specialize in C#, Unity, Python, and satisfying user experiences.
+          </p>
+        </div>
+        <!---END ROW--->
+      </div>
       <section id="projects">
         <h2>Featured Projects</h2>
         <div class="project">
@@ -147,7 +160,11 @@
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
-      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
     ></script>
   </body>
 </html>
