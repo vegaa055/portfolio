@@ -179,3 +179,8 @@ footer {
 .about {
   font-family: "Montserrat";
 }
+
+.project-item {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #30363d;
+}
