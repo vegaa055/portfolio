@@ -22,6 +22,14 @@
   </head>
 
   <body>
+    <button
+      type="button"
+      class="btn btn-danger btn-floating btn-lg"
+      id="btn-back-to-top"
+    >
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
     <header>
       <h1 class="title-name">Tony Vega</h1>
       <p>
@@ -114,9 +122,13 @@
               shadows to give a little more depth. Built with Unity & C# and
               taking advantage of Unity's ScriptableObjects.
             </p>
-            <video controls>
-              <source src="videos/cryptid-hunter-clip.mp4" type="video/mp4" />
-            </video>
+
+            <div class="embed-responsive embed-responsive-4by3">
+              <iframe
+                class="embed-responsive-item"
+                src="videos/cryptid-hunter-clip.mp4"
+              ></iframe>
+            </div>
           </div>
 
           <div class="project-item">
