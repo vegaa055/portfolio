@@ -85,7 +85,7 @@ nav a {
 }
 
 nav a:hover {
-  background: #dddcdc;
+  background: #383838;
 }
 
 .container {
@@ -187,4 +187,8 @@ footer {
 
 #projects {
   padding-top: 20px;
+}
+
+.skills {
+  font-family: "Montserrat";
 }
