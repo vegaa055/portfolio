@@ -60,10 +60,6 @@ header {
   overflow: hidden;
 }
 
-/* header:hover {
-  cursor: url("/images/alien.ico"), auto;
-} */
-
 header h1 {
   font-family: "Iceland";
   font-size: 3.5rem;
