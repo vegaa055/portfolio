@@ -100,11 +100,12 @@ nav a {
   color: #58a6ff;
   padding: 1rem 2rem;
   text-decoration: none;
+  border-radius: 0.5rem;
   transition: background 0.3s;
 }
 
 nav a:hover {
-  background: #383838;
+  background: #424446;
 }
 
 .container {
@@ -224,4 +225,41 @@ footer {
 
 .skills {
   font-family: "Montserrat";
+}
+
+/* center space-force-img */
+.space-force-img {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  nav a {
+    padding: 0.5rem 1rem;
+  }
+
+  .container {
+    padding: 1rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .project {
+    padding: 0.5rem;
+  }
+
+  .space-force-img {
+    width: 100%;
+  }
 }

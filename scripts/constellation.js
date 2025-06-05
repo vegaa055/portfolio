@@ -3,15 +3,27 @@ document.addEventListener("DOMContentLoaded", () => {
   const ctx = canvas.getContext("2d");
   let width, height;
   const stars = [];
-  const numStars = 80;
+  const numStars = getNumStars(canvas.width, canvas.height);
   const maxDist = 120;
-  const maxMouseDist = 200;
+  const maxMouseDist = 220;
 
   let mouse = { x: null, y: null };
 
   function resizeCanvas() {
     width = canvas.width = canvas.offsetWidth;
     height = canvas.height = canvas.offsetHeight;
+
+    const newStarCount = getNumStars(width, height);
+    stars.length = 0; // clear stars
+
+    for (let i = 0; i < newStarCount; i++) {
+      stars.push({
+        x: Math.random() * width,
+        y: Math.random() * height,
+        vx: (Math.random() - 0.5) * 0.5,
+        vy: (Math.random() - 0.5) * 0.5,
+      });
+    }
   }
 
   window.addEventListener("resize", resizeCanvas);
@@ -37,6 +49,11 @@ document.addEventListener("DOMContentLoaded", () => {
     mouse.x = null;
     mouse.y = null;
   });
+
+  function getNumStars(width, height) {
+    const density = 0.00035; // Tune this number for more/less density, originally 0.00015
+    return Math.floor(width * height * density);
+  }
 
   function animate() {
     ctx.clearRect(0, 0, width, height);
