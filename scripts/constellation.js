@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const stars = [];
   const numStars = 80;
   const maxDist = 120;
+  const maxMouseDist = 200;
 
   let mouse = { x: null, y: null };
 
@@ -78,7 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
         let dy = stars[i].y - mouse.y;
         let dist = Math.sqrt(dx * dx + dy * dy);
 
-        if (dist < maxDist) {
+        if (dist < maxMouseDist) {
           ctx.beginPath();
           ctx.moveTo(stars[i].x, stars[i].y);
           ctx.lineTo(mouse.x, mouse.y);
@@ -88,7 +89,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       }
     }
-
     requestAnimationFrame(animate);
   }
 
