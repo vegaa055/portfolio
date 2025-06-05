@@ -3,8 +3,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const ctx = canvas.getContext("2d");
   let width, height;
   const stars = [];
-  const numStars = 60;
-  const maxDist = 100;
+  const numStars = 80;
+  const maxDist = 120;
 
   let mouse = { x: null, y: null };
 
