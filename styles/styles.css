@@ -61,8 +61,9 @@ header {
 }
 
 header:hover {
-  cursor: url("/images/ufo.png"), auto;
+  cursor: url("/images/ufo.png"), 8 8 auto;
 }
+
 header h1 {
   font-family: "Iceland";
   font-size: 3.5rem;
