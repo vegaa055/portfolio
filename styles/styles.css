@@ -176,6 +176,14 @@ h4 {
   text-decoration: none;
 }
 
+.social {
+  padding-bottom: 1rem;
+}
+
+.social:hover {
+  transform: scale(1.1);
+}
+
 footer {
   text-align: center;
   padding: 2rem;
