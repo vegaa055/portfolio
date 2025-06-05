@@ -60,8 +60,8 @@ header {
   overflow: hidden;
 }
 
-header:hover {
-  cursor: url("/images/ufo.png"), 8 8 auto;
+header {
+  cursor: url("/images/ufo.ico"), auto;
 }
 
 header h1 {
