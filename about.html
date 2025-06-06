@@ -34,7 +34,9 @@
   </head>
 
   <body>
+  <body>
     <header>
+      <canvas id="constellation-canvas"></canvas>
       <h1 class="title-name">Tony Vega</h1>
       <p>
         Software Developer & Game Developer | Creative Solutions for Modern
@@ -115,13 +117,13 @@
     </nav>
 
     
-    <div class="share-content mx-auto d-flex justify-content-end">
+    <div class="share-content mx-auto d-flex justify-content-end mt-2">
       <!-- AddToAny BEGIN -->
       <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
-        <a class="a2a_button_facebook bg-dark"></a>
-        <a class="a2a_button_pinterest bg-dark"></a>
-        <a class="a2a_button_email bg-dark"></a>
-        <a class="a2a_dd bg-dark" href="https://www.addtoany.com/share"></a>
+        <a class="a2a_button_facebook bg-dark social"></a>
+        <a class="a2a_button_pinterest bg-dark social"></a>
+        <a class="a2a_button_email bg-dark social"></a>
+        <a class="a2a_dd bg-dark social" href="https://www.addtoany.com/share"></a>
       </div>
       <script defer src="https://static.addtoany.com/menu/page.js"></script>
       <!-- AddToAny END -->
@@ -131,10 +133,10 @@
     <div class="container">
       <div class="row">
         <div class="col-sm">
-          <img src="images/tony.jpg" class="profile_pic" />
+          <img src="images/tony.jpg" class="float-sm-left img-fluid profile_pic" />
         </div>
 
-        <h2>About Me</h2>
+        <h2 class="mt-2">About Me</h2>
         <div class="col-sm">
           <p class="about">
             I am a developer who is optimistic about the possibilities of
@@ -271,5 +273,7 @@
       crossorigin="anonymous"
       defer
     ></script>
+
+    <script src="/scripts/constellation.js"></script>
   </body>
 </html>
