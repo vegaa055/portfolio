@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: liquid-smooth;
+}
+
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background: #0d1117;
@@ -238,6 +242,11 @@ footer {
   width: 50%;
 }
 
+#space-force-link {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #ffffff;
+}
 @media (max-width: 768px) {
   header h1 {
     font-size: 2.5rem;
