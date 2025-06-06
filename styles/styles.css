@@ -70,6 +70,7 @@ header h1 {
   color: #58a6ff;
   position: relative;
   z-index: 1;
+  pointer-events: none;
 }
 
 header p {
@@ -78,6 +79,7 @@ header p {
   color: #8b949e;
   position: relative;
   z-index: 1;
+  pointer-events: none;
 }
 
 #constellation-canvas {
