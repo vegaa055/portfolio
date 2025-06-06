@@ -1,3 +1,13 @@
+:root {
+  --primary-color: #58a6ff;
+  --secondary-color: #161b22;
+  --text-color: #c9d1d9;
+  --background-color: #0d1117;
+  --border-color: #30363d;
+  --secondary-text-color: #8b949e;
+  --highlight-color: #318ef8;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,11 +20,11 @@ html {
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background: #0d1117;
-  color: #c9d1d9;
+  background: var(--background-color);
+  color: var(--text-color);
   line-height: 1.6;
   animation: flicker 0.15s infinite;
-  text-shadow: 0 0 1px #58a6ff, 0 0 2px #58a6ff;
+  text-shadow: 0 0 1px var(--primary-color), 0 0 2px var();
 }
 
 @keyframes flicker {
@@ -59,7 +69,7 @@ header {
   background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
   padding: 2rem;
   text-align: center;
-  border-bottom: 1px solid #30363d;
+  border-bottom: 1px solid var(--border-color);
   position: relative;
   overflow: hidden;
 }
@@ -67,7 +77,7 @@ header {
 header h1 {
   font-family: "Iceland";
   font-size: 3.5rem;
-  color: #58a6ff;
+  color: var(--primary-color);
   position: relative;
   z-index: 1;
   pointer-events: none;
@@ -76,7 +86,7 @@ header h1 {
 header p {
   font-family: "Montserrat";
   font-size: 1.2rem;
-  color: #8b949e;
+  color: var(--secondary-text-color);
   position: relative;
   z-index: 1;
   pointer-events: none;
@@ -94,12 +104,12 @@ header p {
 nav {
   display: flex;
   justify-content: center;
-  background: #161b22;
-  border-bottom: 1px solid #30363d;
+  background: var(--secondary-color);
+  border-bottom: 1px solid var(--border-color);
 }
 
 nav a {
-  color: #58a6ff;
+  color: var(--primary-color);
   padding: 1rem 2rem;
   text-decoration: none;
   border-radius: 0.5rem;
@@ -123,8 +133,8 @@ section {
 h2 {
   font-family: "Iceland";
   font-size: 2.5rem;
-  color: #58a6ff;
-  border-bottom: 1px solid #30363d;
+  color: var(--primary-color);
+  border-bottom: 1px solid var(--border-color);
   padding-bottom: 0.5rem;
   margin-bottom: 1rem;
 }
@@ -138,16 +148,16 @@ h4 {
 }
 
 .exp-title {
-  color: #318ef8;
+  color: var(--highlight-color);
 }
 
 .experience-item .experience-desc {
   font-family: "Montserrat";
   font-weight: 200;
-  border-bottom: 1px solid #30363d;
+  border-bottom: 1px solid var(--border-color);
   padding-bottom: 0.5rem;
   margin-bottom: 1rem;
-  text-shadow: 0 0 1px #58a6ff, 0 0 2px #58a6ff;
+  text-shadow: 0 0 1px var(--primary-color), 0 0 2px var(--primary-color);
 }
 
 .experience-duration {
@@ -155,7 +165,7 @@ h4 {
 }
 
 .project {
-  background: #161b22;
+  background: var(--secondary-color);
   padding: 1rem;
   border-radius: 8px;
   margin-bottom: 1rem;
@@ -165,21 +175,31 @@ h4 {
 
 .project:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(88, 166, 255, 0.3);
+  box-shadow: 0 0 20px rgba(88, 230, 255, 0.3);
   z-index: 10;
   position: relative;
 }
 
 .project h3 {
-  color: #c9d1d9;
+  color: var(--text-color);
 }
 
 .project p {
-  color: #8b949e;
+  color: var(--secondary-text-color);
 }
 
 #projects a {
   text-decoration: none;
+}
+
+.proj-btn {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.75rem;
+}
+
+.proj-btn:hover {
+  background-color: var(--highlight-color);
 }
 
 .social {
@@ -187,16 +207,16 @@ h4 {
 }
 
 .social:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 footer {
   text-align: center;
   padding: 2rem;
-  background: #0d1117;
-  color: #8b949e;
+  background: var(--background-color);
+  color: var(--secondary-text-color);
   font-size: 0.9rem;
-  border-top: 1px solid #30363d;
+  border-top: 1px solid var(--border-color);
 }
 
 .profile_pic {
@@ -226,7 +246,7 @@ footer {
 
 .project-item {
   padding-bottom: 30px;
-  border-bottom: 1px solid #30363d;
+  border-bottom: 1px solid var(--border-color);
 }
 
 #projects {
