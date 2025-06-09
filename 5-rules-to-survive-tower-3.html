@@ -1310,6 +1310,7 @@
         display: none;
       }
       tw-story {
+  
         display: -ms-flexbox;
         display: flex;
         -ms-flex-direction: column;
@@ -1706,7 +1707,7 @@
         z-index: 9999;
         mix-blend-mode: multiply;
       }
-
+      
     </style>
   </head>
   <body>
@@ -1736,7 +1737,7 @@
         type="text/twine-css"
       >
         tw-story {
-          background-color: rgb(0, 0, 0);
+          background-color: rgb(32, 32, 32);
         }
         tw-story {
           font-family: "Special Elite", serif;
@@ -2014,6 +2015,9 @@
         input[type="range"].hal:focus::-ms-fill-upper {
           background: #444;
         }
+        tw-hook{
+          padding-top: 0;
+        }
         /** End of HAL code */
       </style>
       <script role="script" id="twine-user-script" type="text/twine-javascript">
@@ -2077,10 +2081,9 @@
 
 &lt;img src=&quot;https://www.thesca.org/wp-content/uploads/archive/s3/s3fs-public/field/image/YellowstoneFire1988Trees_JeffHenryNPS_840x480.png&quot;&gt;
 
-|p2)[ “During the dry season we get fires quite often. But being that we
-are officially in the monsoons, you might not get any fires for your
-first shift. Too bad, always good to new rangers to be &#39;baptized in
-fire&#39; on their first shift!” he says the last part jokingly. (click: ?Page)[(show: ?p3)]] 
+
+|p2)[ “During the dry season we get fires quite often. But being that we are officially in the monsoons, you might not get any fires for your first shift. Too bad, always good to new rangers to be &#39;baptized in fire&#39; on their first shift!” he says the last part jokingly. (click: ?Page)[(show: ?p3)]] 
+
 
 |p3)[ [[Continue]]]</tw-passagedata><tw-passagedata pid="5" name="Rangers have gone mad before?" tags="" position="2025,1500" size="100,100">(set: $rangers_gone_mad_before to true) |p1&gt;[ &quot;Prior to the two weeks on, one week off rule, have any rangers ever had adverse reactions after a longer shift?&quot;(click: ?Page)[(show: ?p2)]] 
 
@@ -2099,6 +2102,7 @@ fire&#39; on their first shift!” he says the last part jokingly. (click: ?Page
 
 |p6)[ No signs of him were ever found and the authorities seemed to have given up. Without any real leads, I can&#39;t say I blame &#39;em. Any number of things can happen out here in the wild.&quot;(click: ?Page)[(show: ?p7)]] 
 
+
 |p7)[
 [[Continue]]]</tw-passagedata><tw-passagedata pid="6" name="Are there any other rangers on duty nearby?" tags="" position="2025,1400" size="100,100">(set: $other_rangers_nearby to true) [ &quot;You mentioned that there were two other rangers nearby?&quot;(click: ?Page)[(show: ?p2)]] 
 
@@ -2109,7 +2113,10 @@ fire&#39; on their first shift!” he says the last part jokingly. (click: ?Page
 Then you got Stella, about 3 miles to your west. She’s a veteran of 20 years and a sweetheart with a heart of gold. But don’t let that fool ya, she is tough as nails, I tell you what. That’s about it for this region. You can reach them on the radio and their frequencies should be listed at your desk.” (click: ?Page)[(show: ?p3)]] 
 
 |p3)[
-[[Continue]]] </tw-passagedata><tw-passagedata pid="7" name="Unpack" tags="" position="1525,1725" size="100,100">|p1&gt;[ You figure you’ll get your unpacking out of the way. It’s not like you have too many belongings, just some clothes and a few books. (click: ?Page)[(show: ?p2)]] 
+[[Continue]]] </tw-passagedata><tw-passagedata pid="7" name="Unpack" tags="" position="1525,1725" size="100,100">
+  
+
+|p1&gt;[ You figure you’ll get your unpacking out of the way. It’s not like you have too many belongings, just some clothes and a few books. (click: ?Page)[(show: ?p2)]] 
 
 
 |p2)[ Things were not going too well for you financially just prior to this gig so you don&#39;t have much to your name. You were laid off at the height of the pandemic and have been unemployed since. Moved in with your pops until he ended up getting the virus and passing a year later. Things sucked. But that was a year ago and this was your chance to get your mind right.(click: ?Page)[(show: ?p3)]] 
@@ -2121,22 +2128,28 @@ Then you got Stella, about 3 miles to your west. She’s a veteran of 20 years a
 |p4)[ You put your shirts away in the closet that is positioned next to your desk. Inside you notice a shotgun. Chuck told you about how every station needs at least one firearm, in case of emergencies and emergencies //only//. An example of said emergency would be a camper getting mauled by Yogi or some escaped mental patient coming at you with a machete. You set your clothes inside eyeing the (text-color:blue)[shotgun] with caution but making a (text-color:blue)[mental note of it].(click: ?Page)[(show: ?p5)]] 
 
 
-|p5)[ As you put away your beloved books, you notice something behind the bookcase. A piece of paper that seems to be folded and lodged behind. You grab it and unfold reading the sentence at the top….(click: ?Page)[(show: ?p6)]] |p6)[ 5 Rules to Survive Tower 3(click: ?Page)[(show: ?p7)]] 
+|p5)[ As you put away your beloved books, you notice something behind the bookcase. A piece of paper that seems to be folded and lodged behind. You grab it and unfold reading the sentence at the top….(click: ?Page)[(show: ?p6)]] 
 
 
-|p7)[ [[Read the list]]] </tw-passagedata><tw-passagedata pid="8" name="HikeFirst" tags="" position="1650,1725" size="100,100">|p1&gt;[You figure you&#39;ll go on a small hike before getting
-        situated. Something about staring out those windows across the vast
-        wilderness seduced you in that moment. Plus it&#39;ll be good to get an
-        idea of your surroundings early on. Pops always told me, in the wild
-        make sure you get your bearings first and foremost. (click:
-        ?Page)[(show: ?p2)]] |p2)[ &#39;I sure do miss him&#39;, you think to
-        yourself as you head out the door. (click: ?Page)[(show: ?p3)]] |p3)[
-        You make your way down the stairs noticing how they creak from time to
-        time. As you reach the bottom you have three paths before you. The one
-        to the right (east) leads back to the ranger station. The other two are
-        straight (north) or left (west).(click: ?Page)[(show: ?p4)]] |p4)[
-        [[Head North]] [[Head West]]]</tw-passagedata><tw-passagedata pid="9" name="Read the list" tags="list" position="1525,1850" size="100,100">&#39;&#39;5 Rules to Survive Tower 3&#39;&#39;
+|p6)[ 5 Rules to Survive Tower 3(click: ?Page)[(show: ?p7)]] 
+
+
+|p7)[ [[Read the list]]] </tw-passagedata><tw-passagedata pid="8" name="HikeFirst" tags="" position="1650,1725" size="100,100">
+  
+|p1&gt;[You figure you&#39;ll go on a small hike before getting situated. Something about staring out those windows across the vast wilderness seduced you in that moment. Plus it&#39;ll be good to get an idea of your surroundings early on. Pops always told me, in the wild make sure you get your bearings first and foremost. (click: ?Page)[(show: ?p2)]] 
+        
+|p2)[ &#39;I sure do miss him&#39;, you think to
+        yourself as you head out the door. (click: ?Page)[(show: ?p3)]] 
+        
+        
+|p3)[ You make your way down the stairs noticing how they creak from time to time. As you reach the bottom you have three paths before you. The one to the right (east) leads back to the ranger station. The other two are straight (north) or left (west).(click: ?Page)[(show: ?p4)]] 
+        
+
+|p4)[
+[[Head North]] 
+[[Head West]]]</tw-passagedata><tw-passagedata pid="9" name="Read the list" tags="list" position="1525,1850" size="100,100">&#39;&#39;5 Rules to Survive Tower 3&#39;&#39;
 (b4r:&quot;double&quot;,&quot;none&quot;,&quot;none&quot;)+(b4r-colour:red)
+
 |p1&gt;[ 
 1. Between the hours of (text-colour:red)[3am] and (text-colour:red)[4am], if you hear cackling outside of your door, turn on all the lights and hide in the closet.
 
@@ -2212,11 +2225,15 @@ You open the door to see a blonde woman in her early 40&#39;s wearing a ranger&#
 [[Hank?]] 
 [[Glad to be of help]]]</tw-passagedata><tw-passagedata pid="17" name="Shake Chuck&#39;s Hand" tags="" position="1675,1400" size="100,100">|p1&gt;[ You shake his hand and say &quot;Pleasure to meet you Chuck, I&#39;m $playerName.&quot;(click: ?Page)[(show: ?p2)]] 
 
+
 |p2)[ &quot;Nice to have you on board, $playerName.&quot; He returns.(click: ?Page)[(show: ?p3)]] 
+
 
 |p3)[ He leads you to his office where he proceeds to outline your responsibilities for the next hour. (click: ?Page)[(show: ?p4)]] 
 
+
 |p4)[ “Now, as you know the shifts are two weeks on, one week off. Even with two other rangers within radio distance, you can get a little stir crazy being isolated for too long. So, we like to keep shifts to a maximum of two weeks. We also encourage you to check in with the other rangers on duty. Doesn&#39;t need to be every day, just periodically to let someone know everything is okay.”(click: ?Page)[(show: ?p5)]] 
+
 
 |p5)[ “Your main task will be watching for fires, making sure any campers are following proper campfire protocol. In addition, you will also be tasked with clearing any dead brush and overgrown trails. Also, keep an eye on campers in your region, it’s kind of dead this time of year but every now and then we get some folks, so make sure they ain’t causing no trouble or inviting any risk to themselves or the park.”(click: ?Page)[(show: ?p6)]] 
 
@@ -2242,6 +2259,7 @@ You open the door to see a blonde woman in her early 40&#39;s wearing a ranger&#
 
 
 |p5)[ Stella says “Well, anyway follow me, I’ll show you around!”(click: ?Page)[(show: ?p6)]] 
+
 
 |p6)[ [[Follow Stella]]]</tw-passagedata><tw-passagedata pid="20" name="Glad to be of help" tags="" position="2125,2025" size="100,100">|p1&gt;[&quot;I am glad to be of assistance. Plus being able to get away from everything right now is a gift.” you reply.(click: ?Page)[(show: ?p2)]] 
 
@@ -2322,9 +2340,7 @@ it could be one of them. (click: ?Page)[(show: ?p2)]]
 |p2)[ You put it out of your mind and proceed to get something to eat. The rumble of your stomach reminds you that you haven&#39;t eaten since this morning. You heat up some water for a cup &#39;O ramen. Gourmet. You&#39;re suddenly grateful for packing some Tapatio hot sauce. (click: ?Page)[(show: ?p3)]] 
 
 
-|p3)[ &quot;Better to have it and not need it, than need it and
-not have it.&quot; You say to yourself with a chuckle as you pour some
-on your noodles. (click: ?Page)[(show: ?p4)]] 
+|p3)[ &quot;Better to have it and not need it, than need it and not have it.&quot; You say to yourself with a chuckle as you pour some on your noodles. (click: ?Page)[(show: ?p4)]] 
 
 
 |p4)[ 
@@ -2345,15 +2361,19 @@ on your noodles. (click: ?Page)[(show: ?p4)]]
 
 |p5)[ 
 [[Read a book]] 
-[[Turn on Radio]]] ]</tw-passagedata><tw-passagedata pid="27" name="Read a book" tags="" position="2500,2000" size="100,100">|p1&gt;[You grab one of your books to sit and read one of your favorite
-books. (click: ?Page)[(show: ?p2)]] 
+[[Turn on Radio]]] ]</tw-passagedata><tw-passagedata pid="27" name="Read a book" tags="" position="2500,2000" size="100,100">
+  
+|p1&gt;[You grab one of your books to sit and read one of your favorite books. (click: ?Page)[(show: ?p2)]] 
 
 |p2)[ You have always been an avid reader. Something about being able to immerse yourself completely in a new world. It’s an escape from the mediocrity of reality but can also serve as an insight into our reality, depending on what you choose to read.(click: ?Page)[(show: ?p3)]] 
         
+
 |p3)[ You sit back with your noodles and start reading.(click: ?Page)[(show: ?p4)]] 
         
+
 |p4)[ All of a sudden, you are yanked back to reality by the CB radio buzzing to life. (click:?Page)[(show: ?p5)]] |p5)[ &quot;Tower 3, come in, this is tower 1, I repeat, tower 3 come in.&quot;(click: ?Page)[(show: ?p6)]] 
         
+
 |p6)[ ‘Tower 1, must be Conner.’ You think to yourself as you get up from where you were seated to respond.(click: ?Page)[(show: ?p7)]] 
 
 
@@ -2381,31 +2401,38 @@ books. (click: ?Page)[(show: ?p2)]]
 |p8)[ Tower 1, that must be Conner. You walk over the the radio to respond.(click: ?Page)[(show: ?p9)]] 
 
 
-|p9)[ [[Respond to Conner]]] (set: $broadcast_heard to true) </tw-passagedata><tw-passagedata pid="29" name="Respond to Conner" tags="" position="2625,1950" size="100,100">|p1&gt;[ Conner : //“Hey there! I’m Conner from just up north. Wanted
-        to introduce myself and let you know that if you need anything just
-        holler. Over”// (click: ?Page)[(show: ?p2)]] |p2)[ $playerName : “Hey
-        Conner, I’m $playerName. Great to meet you! I appreciate the warm
-        welcome and help. I may have to take you up on that….. Oh. Over” (click:
-        ?Page)[(show: ?p3)]] |p3)[ Conner : //“No problems bud. I know how it
-        feels to be the new guy. Heck, these guys still think of me as the
-        rookie. Over.”// (click: ?Page)[(show: ?p4)]] |p4)[ $playerName : “Yeah,
-        I have the feeling I will be taking your place and I’ll be the new guy
-        for the next ten years! Over” (click: ?Page)[(show: ?p5)]] |p5)[ Conner
-        : //”Tag! You’re it. Hahaha. But seriously, welcome to the crew. Over”//
-        (click: ?Page)[(show: ?p6)]] |p6)[ $playerName : “Thanks, I’m glad to be
-        here! Over” (click: ?Page)[(show: ?p7)]] |p7)[ With that you check the
-        time. (click: ?Page)[(show: ?p8)]] |p8)[
-        (text-color:red)+(text-style:&quot;blur&quot;)[8pm]. (click:
-        ?Page)[(show: ?p9)]] |p9)[ Normally, you’re a night owl but this day has
-        been a long one and you’re beat. (click: ?Page)[(show: ?p10)]] |p10)[
-        [[Get Ready for Bed-&gt;Find List or Get Ready for
-        Bed]]]</tw-passagedata><tw-passagedata pid="30" name="Find List or Get Ready for Bed" tags="" position="2750,1950" size="100,100">(if: $found_list is true)[ You fight a yawn and realize how tired you are. You decide to call it a night. It&#39;s been a long day and getting an early start tomorrow will be beneficial. 
+|p9)[ [[Respond to Conner]]] (set: $broadcast_heard to true) </tw-passagedata><tw-passagedata pid="29" name="Respond to Conner" tags="" position="2625,1950" size="100,100">|p1&gt;[ Conner : //“Hey there! I’m Conner from just up north. Wanted to introduce myself and let you know that if you need anything just holler. Over”// (click: ?Page)[(show: ?p2)]] 
+        
+
+|p2)[ $playerName : “Hey Conner, I’m $playerName. Great to meet you! I appreciate the warm welcome and help. I may have to take you up on that….. Oh. Over” (click: ?Page)[(show: ?p3)]] 
+
+
+|p3)[ Conner : //“No problems bud. I know how it feels to be the new guy. Heck, these guys still think of me as the rookie. Over.”// (click: ?Page)[(show: ?p4)]] 
+
+
+|p4)[ $playerName : “Yeah, I have the feeling I will be taking your place and I’ll be the new guy for the next ten years! Over” (click: ?Page)[(show: ?p5)]] 
+        
+
+|p5)[ Conner : //”Tag! You’re it. Hahaha. But seriously, welcome to the crew. Over”// (click: ?Page)[(show: ?p6)]] 
+
+
+|p6)[ $playerName : “Thanks, I’m glad to be here! Over” (click: ?Page)[(show: ?p7)]] 
+
+
+|p7)[ With that you check the time. (click: ?Page)[(show: ?p8)]] 
+
+
+|p8)[ (text-color:red)+(text-style:&quot;blur&quot;)[8pm]. (click: ?Page)[(show: ?p9)]] 
+
+
+|p9)[ Normally, you’re a night owl but this day has been a long one and you’re beat. (click: ?Page)[(show: ?p10)]] 
+       
+
+|p10)[ [[Get Ready for Bed-&gt;Find List or Get Ready for Bed]]]</tw-passagedata><tw-passagedata pid="30" name="Find List or Get Ready for Bed" tags="" position="2750,1950" size="100,100">(if: $found_list is true)[ You fight a yawn and realize how tired you are. You decide to call it a night. It&#39;s been a long day and getting an early start tomorrow will be beneficial. 
 
 [[Go To Bed]] ] 
 (else:)
-[|p1&gt;[ As you get ready for bed, you notice what appears to be a
-folded piece of paper tucked behind the bookcase.(click: ?Page)[(show:
-?p2)]] 
+[|p1&gt;[ As you get ready for bed, you notice what appears to be a folded piece of paper tucked behind the bookcase.(click: ?Page)[(show: ?p2)]] 
 
 
 |p2)[ ‘What is this’ you think to yourself as you grab it and unfold.(click: ?Page)[(show: ?p3)]] 
@@ -2418,11 +2445,15 @@ folded piece of paper tucked behind the bookcase.(click: ?Page)[(show:
 
 
 |p5)[ [[The List]]]
-]</tw-passagedata><tw-passagedata pid="31" name="Go To Bed" tags="" position="3125,2100" size="100,100">|p1&gt;[ That’s better. (click: ?Page)[(show: ?p2)]] 
+]</tw-passagedata><tw-passagedata pid="31" name="Go To Bed" tags="" position="3125,2100" size="100,100">\
+|p1&gt;[ That’s better. (click: ?Page)[(show: ?p2)]] 
+
 
 |p2)[ Your eyelids are heavy(click: ?Page)[(show: ?p3)]] 
 
+
 |p3)[ You doze off...(click: ?Page)[(show: ?p4)]] 
+
 
 |p4)[
 
@@ -2432,14 +2463,18 @@ folded piece of paper tucked behind the bookcase.(click: ?Page)[(show:
 
 [[Go To Bed]]</tw-passagedata><tw-passagedata pid="34" name="Put list in trash 2" tags="" position="2925,2200" size="100,100">You crumple up the list and throw it in the trash, resisting the temptation to shout &quot;KOBE!&quot; (set:$list_in_trash to true) 
 
-[[Go To Bed]]</tw-passagedata><tw-passagedata pid="35" name="Day 2" tags="" position="3325,1975" size="100,100">|p1&gt;[You awake and forget where you are for a second. Then you remember. It usually takes a while to get used to sleeping somewhere new. (click: ?Page)[(show: ?p2)]] 
+[[Go To Bed]]</tw-passagedata><tw-passagedata pid="35" name="Day 2" tags="" position="3325,1975" size="100,100">
+|p1&gt;[You awake and forget where you are for a second. Then you remember. It usually takes a while to get used to sleeping somewhere new. (click: ?Page)[(show: ?p2)]] 
+
 
 |p2)[ You have your coffee outside leaning on the railing outside your quarters.(click: ?Page)[(show: ?p3)]] 
+
 
 |p3)[ (if:$broadcast_heard is true)[ Today’s plan was simple. Watch for fires. So you figured you’d hang outside on the balcony and do some reading while watching the woods. It was either that or turn the radio back on and listen 93.9 Crazy Cult FM(click: ?Page)[(show: ?p4)]]
 (else:)
 
 [ Today’s plan was simple. Watch for fires. So you figured you’d hang outside on the balcony and do some reading while watching the woods. It was either that or see what you can find on the AM/FM radio to help pass the time.(click: ?Page)[(show: ?p4)]]] 
+
 
 |p4)[ 
 [[Radio While Watching]] 
@@ -2505,33 +2540,45 @@ crackling of the CB radio and a voice:(click: ?Page)[(show: ?p5)]]
 
 |p5)[ “Tower 3, come in, tower 3 come in. This is tower 2. Over.”(click: ?Page)[(show: ?p6)]] 
 
+
 |p6)[ 
 [[Respond to Stella]]]</tw-passagedata><tw-passagedata pid="39" name="Respond to Stella" tags="" position="2750,1800" size="100,100">(text-color:red)+(text-style:&quot;blur&quot;)[8pm] 
 |p1&gt;[$playerName : &quot;This is tower 3, go ahead tower 2. Over.&quot;(click: ?Page)[(show: ?p2)]] 
 
+
 |p2)[ Stella : “Well, you must be our new recruit. I’m Stella. Thought I’d give ya holler and make sure you’re settling in okay. Over.” (click: ?Page)[(show: ?p3)]] 
+
 
 |p3)[$playerName : “Thank you, and it’s a pleasure to meet you Stella, I’m $playerName. I’m settling in just great! Ove.r”(click: ?Page)[(show:
 ?p4)]] 
 
+
 |p4)[ Stella: “Good to hear, good to hear. Listen, if you need anything at all, just give a shout. We’re glad to have you on board. Over.”(click: ?Page)[(show: ?p5)]] 
+
 
 |p5)[ $playerName : “I really appreciate it. I am definitely happy to be here. Thanks again.
 Over.”(click: ?Page)[(show: ?p6)]] 
+
 
 |p6)[ 
 [[Get Ready For Bed-&gt;Find List or Get Ready for Bed]]] </tw-passagedata><tw-passagedata pid="40" name="Radio" tags="" position="2625,1800" size="100,100">(track: &#39;radiostatic&#39;, &#39;loop&#39;, false) (track: &#39;radiostatic&#39;, &#39;playwhenpossible&#39;) 
 |p1&gt;[ You decide to turn on the small AM/FM radio to see if you can find any stations. You scroll past nothing but static until you hear some sort of talk radio show. A man speaking with conviction fills the speakers:(click: ?Page)[(show: ?p2)]] 
 
+
 |p2)[ //“The time draws near, my friends. As we live in service to the great Chenoo, our sacrifice shall not be in vain! Those who know not of the power of Chenoo laugh at us, call us crazy, and yet they refuse to enter its territory. Over a hundred years ago is when the great Chenoo came to us, to call these woods its domain. Since then our order has been tasked with providing the sacrifice to our god. But, I tell you friends that soon we....”//(click: ?Page)[(show: ?p3)]]
+
 
 |p3)[ &quot;That&#39;s enough of that.&quot; You say to yourself as you turn the radio off. You shrug it off as just some random cult leader wannabe who was able to gain access to an audio transmitter.(click: ?Page)[(show: ?p4)]] 
 
+
 |p4)[ All of a sudden you are startled by a different kind of radio as the CB radio buzzes to life.(click: ?Page)[(show: ?p5)]] 
+
 
 |p5)[ &quot;Tower 3, come in, tower 3 come in. This is tower 2. Over&quot;(click: ?Page)[(show: ?p6)]] 
 
+
 |p6)[ A woman&#39;s voice calls out and you figure that must be Stella.(click: ?Page)[(show: ?p7)]] 
+
 
 |p7)[ 
 
@@ -2586,7 +2633,9 @@ You decide to scan the radio.(click: ?Page)[(show: ?p2)]]
 
 |p8)[ Each tower has an ATV to allow rangers to quickly mobilize in case of emergency, Being that there are no campers registered, you decide to check it out.(click: ?Page)[(show: ?p9)]] 
 
-|p9)[ [[Ride East Towards Smoke]]]</tw-passagedata><tw-passagedata pid="44" name="Book While Watching" tags="" position="3450,1925" size="100,100">|p1&gt;[ You decide to grab one of your favorite books to keep you busy while watching the woods. You figure you’ll watch intently for ten minutes and read for a one to two. Something to break up the monotony. (click: ?Page)[(show: ?p2)]] 
+
+|p9)[ [[Ride East Towards Smoke]]]</tw-passagedata><tw-passagedata pid="44" name="Book While Watching" tags="" position="3450,1925" size="100,100">
+|p1&gt;[ You decide to grab one of your favorite books to keep you busy while watching the woods. You figure you’ll watch intently for ten minutes and read for a one to two. Something to break up the monotony. (click: ?Page)[(show: ?p2)]] 
 
 
 |p2)[ (if: $broadcast_heard is true)

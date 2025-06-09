@@ -214,6 +214,8 @@
                 see what can be done. I was actually quite pleased with the end
                 product!
               </p>
+
+
                           
               <a
                 href="space-force.html"
@@ -239,7 +241,7 @@
             <div class="project-item mt-5">
               <h3 class="right"><span class="pre-title">Rules to Survive Tower 3 |</span>  Twine Game</h3>
               <img src="images/5-rules.PNG" class="img-fluid mb-2" alt="" />
-              <p>
+
                 Narrative video game using Twine. Inspired by various CreepyPasta
                 stories and classic horror. This was developed as my final project
                 in my {narrative game design} class. This project incorperates a
@@ -294,8 +296,35 @@
               name Wyzebeatz. It features a custom design and layout, showcasing
               my music portfolio, including tracks, an audio player/visualizer.
             </p>
+            <p>
+              Although I do not make music as much anymore, I still dabble from 
+              time to time and thought it’d be nice to have my own platform. 
+              As I learn more about working with audio in JavaScript I will add more to the site.  
+            </p>
+            <h4>Technologies Used</h4>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Bootstrap</li>
+              <li>Wavesurfer.js</li>
+            </ul>
             <a
               href="https://wyzebeatz.com"
+              target="_blank"
+              class="btn proj-btn mb-3 mt-2"
+              >Visit Website</a
+            >
+          </div>
+          <div class="project-item">
+            <h3 class="right"><span class="pre-title">VegaAdventure.com |</span> Travel Blog</h3>
+            <p>
+              This is a WordPress site that I am starting. It will feature travel blogs around 
+              southern Arizona, including hiking trails, camping spots, and other outdoor activities.
+              The site is currently under development, but I plan to add more content and features.
+            </p>
+            <a
+              href="https://vegaadventure.com"
               target="_blank"
               class="btn proj-btn mb-3 mt-2"
               >Visit Website</a
@@ -316,7 +345,12 @@
       crossorigin="anonymous"
       defer
     ></script>
-    
+    <script>
+    function enlargeImg() {
+      var img = document.getElementById("myImage");
+      img.classList.toggle("enlarged");
+    }
+    </script>
     <script src="scripts/constellation.js"></script>
   </body>
 </html>
