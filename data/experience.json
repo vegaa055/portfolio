@@ -1,0 +1,44 @@
+{
+  "experience": [
+    {
+      "category": "Professional",
+      "items": [
+        {
+          "title": "Administrative Assistant",
+          "organization": "University of Arizona - College of Applied Science & Technology",
+          "duration": "July 2024 – July 2025",
+          "description": "Answers phone calls and directs callers to the appropriate extensions. Assist walk-ins with whatever information they may need. Handles mail and packages."
+        },
+        {
+          "title": "Administrative Student Worker",
+          "organization": "University of Arizona - College of Applied Science & Technology",
+          "duration": "April 2023 – July 2024",
+          "description": "Answered calls, managed walk-ins, maintained SharePoint pages, and developed PowerApps applications."
+        },
+        {
+          "title": "Research Assistant - VR Lab",
+          "organization": "University of Arizona - College of Applied Science & Technology",
+          "duration": "Dec 2021 – Aug 2022",
+          "description": "Supported VR research, assisted participants, collected observations, and maintained VR equipment."
+        }
+      ]
+    },
+    {
+      "category": "Education",
+      "items": [
+        {
+          "title": "Bachelor of Applied Science, Computer Science",
+          "organization": "University of Arizona - College of Applied Science & Technology",
+          "duration": "Graduated 2024",
+          "description": "Focused on software development, game design, and AI. Involved in VR research and campus tech initiatives."
+        },
+        {
+          "title": "Associates of Applied Science, Computer Programming",
+          "organization": "Cochise College",
+          "duration": "Graduated 2022",
+          "description": "Foundation coursework in computer science, mathematics, and critical thinking."
+        }
+      ]
+    }
+  ]
+}

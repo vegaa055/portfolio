@@ -1,0 +1,27 @@
+{
+  "skills": [
+    {
+      "category": "Programming Languages",
+      "items": ["C", "C++", "C#", "Python", "Java", "Kotlin"]
+    },
+    {
+      "category": "Web Development",
+      "items": ["HTML", "CSS", "Bootstrap", "JavaScript", "PHP"]
+    },
+    {
+      "category": "Game Engines",
+      "items": ["Unity", "Unreal", "Godot"]
+    },
+    {
+      "category": "Methodologies",
+      "items": ["SCRUM", "Agile"]
+    }
+  ],
+  "abilities": [
+    "Creativity",
+    "Problem Solving",
+    "Attention to Detail",
+    "Version Control",
+    "Analytical Thinking"
+  ]
+}

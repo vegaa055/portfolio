@@ -182,53 +182,7 @@
     <div class="container">
       <div class="row">
         <h2>Experience</h2>
-        <div class="experience-item">
-          <!-- EXPERIENCE ITEM -->
-
-          <h3 class="exp-title">Administrative Assistant</h3>
-          <h4>
-            University of Arizona - College of Applied Science & Tecnology
-          </h4>
-          <p class="experience-duration">July 2024 &#8211; July 2025</p>
-          <p class="experience-desc">
-            Answers phone calls and directs callers to the appropriate
-            extensions. Assist walk-ins with whatever information they may need
-            that I am qualified to answer. Ensure mail is placed in appropriate
-            mailboxes and inform employees of any packages received.
-          </p>
-        </div>
-
-        <div class="experience-item">
-          <!-- EXPERIENCE ITEM -->
-          <h3 class="exp-title">Administrative Student Worker</h3>
-          <h4>
-            University of Arizona - College of Applied Science & Tecnology
-          </h4>
-          <p class="experience-duration">April 2023 &#8211; July 2024</p>
-          <p class="experience-desc">
-            Answers phone calls and directs callers to the appropriate
-            extensions. Assist walk-ins with whatever information they may need
-            that I am qualified to answer. Ensure mail is placed in appropriate
-            mailboxes and inform employees of any packages received. Manage
-            SharePoint pages, created PowerApps applications.
-          </p>
-        </div>
-
-        <div class="experience-item">
-          <!-- EXPERIENCE ITEM -->
-          <h3 class="exp-title">Research Assistant - VR Lab</h3>
-          <h4>
-            University of Arizona - College of Applied Science & Tecnology
-          </h4>
-          <p class="experience-duration">December 2021 &#8211; August 2022</p>
-          <p class="experience-desc">
-            Assist with VR research being conducted. Help volunteers with their
-            VR experience, for newcomers give them an overview of the controls
-            and what to expect. Take notes on subjects&#8217; reactions. Assist
-            walk-ins with any information they may need or assist them with
-            using VR equipment.
-          </p>
-        </div>
+        <div id="experience-list"></div>
       </div>
     </div>
 
@@ -237,29 +191,11 @@
       <div class="row">
         <div class="col-sm">
           <h2>Skills</h2>
-          <ul>
-            <li class="skills">
-              <strong>Programming Languages</strong>: C, C++, C#, Python, Java,
-              Kotlin
-            </li>
-            <li class="skills">
-              <strong>Web Development</strong>: HTML, CSS, Bootstrap, JavaScript
-            </li>
-            <li class="skills">
-              <strong>Game Engines</strong>: Unity, Unreal, Godot
-            </li>
-            <li class="skills"><strong>Methodologies</strong>: SCRUM, Agile</li>
-          </ul>
+          <ul id="skills-list"></ul>
         </div>
         <div class="col-sm">
           <h2>Abilities</h2>
-          <ul>
-            <li class="skills">Creativity</li>
-            <li class="skills">Problem Solving</li>
-            <li class="skills">Attention to Detail</li>
-            <li class="skills">Version Control</li>
-            <li class="skills">Analytical Thinking</li>
-          </ul>
+          <ul id="abilities-list"></ul>
         </div>
       </div>
     </div>
@@ -275,6 +211,64 @@
       defer
     ></script>
 
+    <script>
+      fetch('/data/skills.json')
+        .then(response => response.json())
+        .then(data => {
+          const skillsList = document.getElementById('skills-list');
+          const abilitiesList = document.getElementById('abilities-list');
+
+          data.skills.forEach(skill => {
+            const li = document.createElement('li');
+            li.classList.add('skills');
+            li.innerHTML = `<strong>${skill.category}</strong>: ${skill.items.join(', ')}`;
+            skillsList.appendChild(li);
+          });
+
+          data.abilities.forEach(ability => {
+            const li = document.createElement('li');
+            li.classList.add('skills');
+            li.textContent = ability;
+            abilitiesList.appendChild(li);
+          });
+        })
+        .catch(error => console.error('Error loading skills:', error));
+    </script>
+
+<script>
+  fetch('/data/experience.json')
+    .then(response => response.json())
+    .then(data => {
+      const container = document.getElementById('experience-list');
+
+      data.experience.forEach(group => {
+        // Category Heading
+        const categoryTitle = document.createElement('h3');
+        categoryTitle.textContent = group.category;
+        categoryTitle.classList.add('mt-2', 'mb-3', "experience-category"); // optional styling
+
+
+        container.appendChild(categoryTitle);
+
+
+        // Entries
+        group.items.forEach(item => {
+          const div = document.createElement('div');
+          div.classList.add('experience-item', 'mb-3');
+
+          div.innerHTML = `
+            <h4 class="exp-title">${item.title}</h4>
+            <h5>${item.organization}</h5>
+            <p class="experience-duration">${item.duration}</p>
+            <p class="experience-desc">${item.description}</p>
+          `;
+
+          container.appendChild(div);
+        });
+      });
+    })
+    .catch(error => console.error('Error loading experience:', error));
+</script>
 
 
     <script src="scripts/constellation.js"></script>
